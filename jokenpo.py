@@ -6,8 +6,9 @@ def start():
     print(" " * 40)
     print("J    O    K    E    N    P    Ô")
     print(' ' * 40)
-    game_mode = int(input("Escolha o modo de jogo\nDigite 1 para JOGADOR VS COMPUTADOR\n"
-                          "Digite 2 para JOGADOR VS JOGADOR"))
+    game_mode = int(input("Digite 1 para JOGADOR VS COMPUTADOR\n"
+                          "Digite 2 para JOGADOR VS JOGADOR\n"
+                          "Escolha o modo de jogo:"))
     if game_mode == 1:
         return machine()
     return player_vs_player()
