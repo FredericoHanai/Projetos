@@ -72,23 +72,23 @@ def player_vs_player():
             if jogador2 == 2 and jogador1 == 0:
                 print("Jogador 2 ganhou a rodada!")
                 print(' ' * 40)
-                jogador1_pontos += 1
+                jogador2_pontos += 1
             else:
                 if jogador2 == 0 and jogador1 == 1:
                     print("Jogador 2 ganhou a rodada!")
                     print(' ' * 40)
-                    jogador1_pontos += 1
+                    jogador2_pontos += 1
                 else:
                     if jogador2 == 1 and jogador1 == 2:
                         print("Jogador 2 ganhou a rodada!")
                         print(' ' * 40)
+                        jogador2_pontos += 1
                     else:
                         print("Jogador 1 ganhou a rodada!!")
                         print(' ' * 40)
-                        jogador2_pontos += 1
+                        jogador1_pontos += 1
             if jogador2_pontos == 2:
                 print("****JOGADOR 1 GANHOU O JOKENPÔ****")
-                jogador1_pontos += 1
                 break
             if jogador1_pontos == 2:
                 print("****JOGADOR 2 GANHOU O JOKENPÔ****")
