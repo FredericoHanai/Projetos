@@ -1,72 +1,59 @@
-def soma():
-    n1 = input('Digite um numero: ')
-    n2 = input('Digite outro numero: ')
-    if n1.isnumeric() and n2.isnumeric():
-        n1 = int(n1)
-        n2 = int(n2)
-        n3 = n1 + n2
-        print(f'A soma entre {n1} e {n2} é igual a  {n3} '.upper())
-    else:
-        print('\33[31mNão foi digitado um numero válido, insira novamente\33[m')
+def soma(x, y):
+    somatoria = x + y
+    print(f'A soma entre {x} e {y} é igual a  {somatoria} '.upper())
+
+
+def subtração(x, y):
+    sub = x - y
+    print(f'A subtração entre {x} e {y} é igual a {sub}'.upper())
     print('\33[33m-*-\33[m' * 40)
 
 
-def subtração():
-    n1 = input('Digite um numero: ')
-    n2 = input('Digite outro numero: ')
-    if n1.isnumeric() and n2.isnumeric():
-        n1 = int(n1)
-        n2 = int(n2)
-        n3 = n1 - n2
-        print(f'A subtração entre {n1} e {n2} é igual a {n3}'.upper())
-    else:
-        print('\33[31mNão foi digitado um numero válido, insira novamente\33[m')
+def multiplicação(x, y):
+    multi = x * y
+    print(f'A multiplicação entre {x} e {y} é igual a {multi}'.upper())
     print('\33[33m-*-\33[m' * 40)
 
 
-def multiplicação():
-    n1 = input('Digite um numero: ')
-    n2 = input('Digite outro numero: ')
-    if n1.isnumeric() and n2.isnumeric():
-        n1 = int(n1)
-        n2 = int(n2)
-        n3 = n1 * n2
-        print(f'A multiplicação entre {n1} e {n2} é igual a {n3}'.upper())
-    else:
-        print('\33[31mNão foi digitado um numero válido, insira novamente\33[m')
-    print('\33[33m-*-\33[m' * 40)
-
-
-def divisão():
-    n1 = input('Digite um numero: ')
-    n2 = input('Digite outro numero: ')
-    if n1.isnumeric() and n2.isnumeric():
-        n1 = int(n1)
-        n2 = int(n2)
-        n3 = n1 / n2
-        print(f'A divisão entre {n1} e {n2} é {n3}'.upper())
-    else:
-        print('\33[31mNão foi digitado um numero válido, insira novamente\33[m')
+def divisão(x, y):
+    div = x / y
+    print(f'A divisão entre {x} e {y} é {div}'.upper())
     print('\33[33m-*-\33[m' * 40)
 
 
 while True:
-    escolha = int(input('Calculadora, escolha as opcoes:\n'
-                        '1 - Soma \n'
-                        '2 - Subtração\n'
-                        '3 - Multiplcação\n'
-                        '4 - Divisão: \n'
-                        '0 - STOP\n'
-                        'Opção: '))
-    if escolha == 1:
-        soma()
-    elif escolha == 2:
-        subtração()
-    elif escolha == 3:
-        multiplicação()
-    elif escolha == 4:
-        divisão()
-    elif escolha == 0:
-        break
+    print("CALCULADORA")
+    n1 = input('Digite um numero: ')
+    n2 = input('Digite outro numero: ')
+    if n1.isnumeric() and n2.isnumeric():
+        n1 = int(n1)
+        n2 = int(n2)
+        while True:
+            escolha = int(input('Escolha a operação:\n'
+                                '1 - Soma \n'
+                                '2 - Subtração\n'
+                                '3 - Multiplcação\n'
+                                '4 - Divisão: \n'
+                                '0 - STOP\n'
+                                'Opção: '))
+            if escolha == 1:
+                soma(n1, n2)
+                break
+            elif escolha == 2:
+                subtração(n1, n2)
+                break
+            elif escolha == 3:
+                multiplicação(n1, n2)
+                break
+            elif escolha == 4:
+                divisão(n1, n2)
+                break
+            elif escolha == 0:
+                break
+            else:
+                print('Número da operação invalido, por favor inserir correto')
     else:
-        print('Numero invalido, favor inserir correto')
+        print('\33[31mNão foi digitado um número válido, insira novamente\33[m')
+    print('\33[33m-*-\33[m' * 40)
+
+
