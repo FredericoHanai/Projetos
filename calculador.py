@@ -38,7 +38,6 @@ while True:
                                     '2 - Subtração\n'
                                     '3 - Multiplcação\n'
                                     '4 - Divisão: \n'
-                                    '0 - STOP\n'
                                     'Opção: '))
                 if escolha == 1:
                     soma(n1, n2)
@@ -51,8 +50,6 @@ while True:
                     break
                 elif escolha == 4:
                     divisão(n1, n2)
-                    break
-                elif escolha == 0:
                     break
                 else:
                     print('Número da operação invalido, por favor inserir correto')
