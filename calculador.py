@@ -23,37 +23,41 @@ def divisão(x, y):
 
 while True:
     print("CALCULADORA")
-    n1 = input('Digite um numero: ')
-    n2 = input('Digite outro numero: ')
-    if n1.isnumeric() and n2.isnumeric():
-        n1 = int(n1)
-        n2 = int(n2)
-        while True:
-            escolha = int(input('Escolha a operação:\n'
-                                '1 - Soma \n'
-                                '2 - Subtração\n'
-                                '3 - Multiplcação\n'
-                                '4 - Divisão: \n'
-                                '0 - STOP\n'
-                                'Opção: '))
-            if escolha == 1:
-                soma(n1, n2)
-                break
-            elif escolha == 2:
-                subtração(n1, n2)
-                break
-            elif escolha == 3:
-                multiplicação(n1, n2)
-                break
-            elif escolha == 4:
-                divisão(n1, n2)
-                break
-            elif escolha == 0:
-                break
-            else:
-                print('Número da operação invalido, por favor inserir correto')
+    resp = input("Deseja fazer uma operação? S/N: ").upper()
+    if resp == "N":
+        break
     else:
-        print('\33[31mNão foi digitado um número válido, insira novamente\33[m')
-    print('\33[33m-*-\33[m' * 40)
+        n1 = input('Digite um numero: ')
+        n2 = input('Digite outro numero: ')
+        if n1.isnumeric() and n2.isnumeric():
+            n1 = int(n1)
+            n2 = int(n2)
+            while True:
+                escolha = int(input('Escolha a operação:\n'
+                                    '1 - Soma \n'
+                                    '2 - Subtração\n'
+                                    '3 - Multiplcação\n'
+                                    '4 - Divisão: \n'
+                                    '0 - STOP\n'
+                                    'Opção: '))
+                if escolha == 1:
+                    soma(n1, n2)
+                    break
+                elif escolha == 2:
+                    subtração(n1, n2)
+                    break
+                elif escolha == 3:
+                    multiplicação(n1, n2)
+                    break
+                elif escolha == 4:
+                    divisão(n1, n2)
+                    break
+                elif escolha == 0:
+                    break
+                else:
+                    print('Número da operação invalido, por favor inserir correto')
+        else:
+            print('\33[31mNão foi digitado um número válido, insira novamente\33[m')
+        print('\33[33m-*-\33[m' * 40)
 
 
