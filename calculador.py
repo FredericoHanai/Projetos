@@ -20,7 +20,7 @@ def expoente(x,y):
     
 
 while True:
-    print("CALCULADORA")
+    print("\33[41;1m CALCULADORA \33[m")
     resp = input("Deseja fazer uma operação? S/N: ").upper()
     if resp.isalnum():
         if resp == "N":
