@@ -51,3 +51,10 @@ def RomantoDecimal():
         valor += romanos[nAtual]
     print(valor)
 
+while True:
+    print("Qual das opcões vc deseja:\n"
+          "0 - Transformar DECIMAL em ROMANO\n"
+          "1 - Tranformar ROMANO em DECIMAL")
+    resp = input("Digite sua escolha: ")
+    if resp == '0':
+        print('em desenvolvimento')
