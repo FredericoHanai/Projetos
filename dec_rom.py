@@ -6,7 +6,7 @@ d = (num % 100)//10
 u = num % 10
 
 uni = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
-dez = ["X", "XX", "XXX", "XL", "X", "LX", "LXX", "LXXX", "XC"]
+dez = ["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
 cen = ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
 mil = ["M", "MM", "MMM"]
 
