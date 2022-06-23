@@ -49,12 +49,20 @@ def RomantoDecimal():
             valor += romanos[nAtual]
             continue
         valor += romanos[nAtual]
-    print(valor)
+    print(f'O numero ROMANO {resp} em DECIMAL é: {valor}\n')
 
 while True:
     print("Qual das opcões vc deseja:\n"
           "0 - Transformar DECIMAL em ROMANO\n"
           "1 - Tranformar ROMANO em DECIMAL")
     resp = input("Digite sua escolha: ")
-    if resp == '0':
-        print('em desenvolvimento')
+    if resp.isnumeric():
+        resp = int(resp)
+        if resp == 0:
+            DecimaltoRoman()
+        elif resp ==1:
+            RomantoDecimal()
+        else:
+            print('\n\33[31m Numero inválido, favor colocar 0 ou 1.\33[m\n')
+    else:
+        print("\n\33[31m Comando invalido!\33[m\n")
