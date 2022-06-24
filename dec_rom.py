@@ -60,7 +60,7 @@ while True:
         resp = int(resp)
         if resp == 0:
             DecimaltoRoman()
-        elif resp ==1:
+        elif resp == 1:
             RomantoDecimal()
         else:
             print('\n\33[31m Numero inválido, favor colocar 0 ou 1.\33[m\n')
