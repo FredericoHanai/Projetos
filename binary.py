@@ -31,7 +31,6 @@ def decimalBinario():
 def binarioDecimal():
     numBin = input("Digite um número binário: ")
     listBin = list(numBin)
-    print(numBin)
     decimal = 0
     multi = len(listBin) - 1
     for i in listBin:
@@ -39,7 +38,6 @@ def binarioDecimal():
         decimal += n*(2**multi)
         multi -= 1
     print(f"O numero {numBin} convertido para decimal é {decimal}")
-
 
 
 if __name__ == "__main__":
