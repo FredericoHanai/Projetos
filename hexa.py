@@ -54,11 +54,11 @@ def hexa_dec():
         if i.isnumeric():
             calculo = int(i)
             indice = hexaList.index(i)
-            dec += calculo*(16**indice)
+            dec += calculo * (16 ** indice)
         else:
             valorLetra = hexadecimais[i]
             indice = hexaList.index(i)
-            dec += valorLetra*(16**indice)
+            dec += valorLetra * (16 ** indice)
 
     print(f"O numero hexadecimal {hexa} convertido para decimal é {dec}")
 
